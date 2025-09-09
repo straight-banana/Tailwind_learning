@@ -9,10 +9,11 @@
     <style type="text/tailwindcss">
         @layer components {
             .violetbut{
-                @apply bg-violet-700 px-4 py-2 text-white rounded-xl
+                @apply bg-violet-700 px-4 py-2 text-white rounded-xl hover:scale-105 animate-[pulse_2s_linear_infinite]
             }
+            
             .tbut{
-                @apply rounded-xl border-1 border-gray-500 px-4 py-2
+                @apply rounded-xl border-1 border-gray-500 px-4 py-2 hover:scale-105
             }
 
             .tick{
@@ -23,10 +24,26 @@
                 @apply flex gap-2 items-center
             }
 
+            .navbutton{
+                @apply hover:font-semibold hover:text-violet-700
+            }
+
+            .greentick{
+                @apply w-[1.5rem] h-[1.5rem]
+            }
+
         }
         @layer utilities{
             p{
                 @apply text-gray-600 text-xl py-3
+            }
+
+            h2{
+                @apply text-4xl font-extrabold py-5
+            }
+
+            h3{
+                @apply  text-3xl font-bold py-5
             }
         }
     </style>
@@ -41,11 +58,11 @@
         </div>
         <div>
             <ul class="flex gap-7">
-                <li><a href="#" class="hover:font-extrabold">Company</a></li>
-                <li><a href="#" class="hover:font-extrabold">Marketplace</a></li>
-                <li><a href="#" class="hover:font-extrabold">Features</a></li>
-                <li><a href="#" class="hover:font-extrabold">Team</a></li>
-                <li><a href="#" class="hover:font-extrabold">Contact</a></li>
+                <li><a href="#" class="navbutton">Company</a></li>
+                <li><a href="#" class="navbutton">Marketplace</a></li>
+                <li><a href="#" class="navbutton">Features</a></li>
+                <li><a href="#" class="navbutton">Team</a></li>
+                <li><a href="#" class="navbutton">Contact</a></li>
             </ul>
         </div>
         <div class="ml-auto">
@@ -72,19 +89,19 @@
             </div>
         </div>
         <div class="flex justify-between items-center pb-5">
-            <a href="#"><img src="./img/google.png" class="w-[6rem]"></a>
-            <a href="#"><img src="./img/microsoft.png" class="w-[6rem]"></a>
-            <a href="#"><img src="./img/spotify.png" class="w-[6rem]"></a>
-            <a href="#"><img src="./img/mailchimp.png" class="w-[6rem]"></a>
-            <a href="#"><img src="./img/airbnb.png" class="w-[6rem]"></a>
-            <a href="#"><img src="./img/Uber.png" class="w-[6rem]"></a>
+            <a href="#"><img src="./img/google.png" class="w-[6rem] hover:scale-130"></a>
+            <a href="#"><img src="./img/microsoft.png" class="w-[6rem] hover:scale-130"></a>
+            <a href="#"><img src="./img/spotify.png" class="w-[6rem] hover:scale-130"></a>
+            <a href="#"><img src="./img/mailchimp.png" class="w-[6rem] hover:scale-130"></a>
+            <a href="#"><img src="./img/airbnb.png" class="w-[6rem] hover:scale-130"></a>
+            <a href="#"><img src="./img/Uber.png" class="w-[6rem] hover:scale-130"></a>
         </div>
     </div>
 
 
     <div class="py-10 bg-gray-100 px-20 gap-10 flex items-center h-screen ">
         <div class="w-1/2">
-            <h2 class="text-4xl font-extrabold py-5">Work with tools you already use</h2>
+            <h2>Work with tools you already use</h2>
             <p>Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
             <br>
             <hr class=" border-gray-500">
@@ -106,7 +123,7 @@
             <img src="./img/Page3Img1.png">
         </div>
         <div class="w-1/2">
-            <h2 class="text-4xl font-extrabold py-5">We invest in the world’s potential</h2>
+            <h2>We invest in the world’s potential</h2>
             <p>Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease. </p>
             <br>
             <hr class=" border-gray-500">
@@ -124,7 +141,7 @@
     <div class="py-10 px-20 flex gap-10 items-center h-screen ">
         <div class="w-1/2">
             <p class="text-violet-700">Trusted Worldwide</p>
-            <h2 class="text-4xl font-extrabold py-5">Trusted by over 600 million users and 10,000 teams</h2>
+            <h2>Trusted by over 600 million users and 10,000 teams</h2>
             <p>Our rigorous security and compliance standards are at the heart of all we do. We work tirelessly to protect you and your customers. </p>
             <br>
             <hr class=" border-gray-500">
@@ -136,22 +153,22 @@
         <div class="w-1/2 grid grid-cols-2 grid-rows-2 gap-10">
             <div>
                 <img src="./img/server.png" class="py-5">
-                <h3 class="text-3xl font-bold py-5">99.99% uptime</h3>
+                <h3>99.99% uptime</h3>
                 <p>for Flowbite, with zero maintenance downtime</p>
             </div>
             <div>
                 <img src="./img/users.png" class="py-5">
-                <h3 class="text-3xl font-bold py-5">600M+ Users</h3>
+                <h3>600M+ Users</h3>
                 <p>trusted by over 600 milion users around the world</p>
             </div>
             <div>
                 <img src="./img/shopping-cart.png" class="py-5">
-                <h3 class="text-3xl font-bold py-5">Millions</h3>
+                <h3>Millions</h3>
                 <p>of transactions per day</p>
             </div>
             <div>
                 <img src="./img/Vector.png" class="py-5">
-                <h3 class="text-3xl font-bold py-5">100+ countries</h3>
+                <h3>100+ countries</h3>
                 <p>have used Flowbite to create functional websites</p>
             </div>
         </div>
@@ -171,38 +188,38 @@
 
 
     <div class="flex flex-col items-center justify-center py-10 px-20">
-            <h2 class="text-4xl font-extrabold py-5">Pay as you grow</h2>
+            <h2>Pay as you grow</h2>
             <p class="px-60 py-10 text-center">Here at flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
         <div class="grid grid-cols-3 gap-5">
 
             <!-- Starter -->
             <div class="flex flex-col  py-10 px-5 rounded-3xl border-1 border-gray-500 shadow-xl">
-                <h3 class="text-3xl font-bold py-5 text-center">Starter</h3>
+                <h3 class="text-center">Starter</h3>
                 <p class="text-center">Great for personal use and for your side projects.</p>
                 <div class="flex items-end justify-center">
                     <h1 class="text-6xl font-extrabold py-5">$49  </h1>
                     <p> /month</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Individual configuration</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>No detup, monthly, or hidden fees</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Team size: </p>
                     <p class="text-black font-bold">1 developer</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Premium support: </p>
                     <p class="text-black font-bold">6 months</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Free updates: </p>
                     <p class="text-black font-bold">6 moths</p>
                 </div>
@@ -211,32 +228,32 @@
 
             <!-- Company -->
             <div class="flex flex-col  py-10 px-5 rounded-3xl border-1 border-gray-500 shadow-xl">
-                <h3 class="text-3xl font-bold py-5 text-center">Company</h3>
+                <h3 class="text-center">Company</h3>
                 <p class="text-center">Best for large scale uses and extended redistribution rights.</p>
                 <div class="flex items-end justify-center">
                     <h1 class="text-6xl font-extrabold py-5">$99  </h1>
                     <p> /month</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Individual configuration</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>No detup, monthly, or hidden fees</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Team size: </p>
                     <p class="text-black font-bold">10 developer</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Premium support: </p>
                     <p class="text-black font-bold">24 months</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Free updates: </p>
                     <p class="text-black font-bold">24 moths</p>
                 </div>
@@ -245,32 +262,32 @@
 
             <!-- Enterprise -->
             <div class="flex flex-col  py-10 px-5 rounded-3xl border-1 border-gray-500 shadow-xl">
-                <h3 class="text-3xl font-bold py-5 text-center">Enterprise</h3>
+                <h3 class="text-center">Enterprise</h3>
                 <p class="text-center">Great for personal use and for your side projects.</p>
                 <div class="flex items-end justify-center">
                     <h1 class="text-6xl font-extrabold py-5">$499  </h1>
                     <p> /month</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Individual configuration</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>No detup, monthly, or hidden fees</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Team size: </p>
                     <p class="text-black font-bold">100+ developer</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Premium support: </p>
                     <p class="text-black font-bold">36 months</p>
                 </div>
                 <div class="flex gap-2 items-center">
-                    <img src="./img/check.png" class="w-[1.5rem] h-[1.5rem]">
+                    <img src="./img/check.png" class="greentick">
                     <p>Free updates: </p>
                     <p class="text-black font-bold">36 moths</p>
                 </div>
@@ -280,7 +297,7 @@
     </div>
 
     <div class="flex flex-col items-center justify-center py-10 bg-gray-100 px-20 h-screen">
-            <h2 class="text-4xl font-extrabold py-5">Start your free trial today</h2>
+            <h2>Start your free trial today</h2>
             <p class="p-10">Try Flowbite Platform for 30 days. No credit card required.</p>
             <button class="violetbut w-[30rem]">Free for 30 days</button>
     </div>
